@@ -1,0 +1,11 @@
+  {
+    "name": "Reddit Video Download",
+    "version": "0.0.1",
+    "description": "Adds a download button to videos hosted on reddit!",
+    "content_scripts": [{
+  		"matches": ["https://www.reddit.com/*"],
+		"js": ["addDownloadIcon.js"]
+    }],
+    "permissions": ["storage"],
+    "manifest_version": 2
+  }
