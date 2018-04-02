@@ -22,7 +22,6 @@ downloadButton.addEventListener("click", e => {
 		.then(response => response.json())
 		.then(json => {
 			try {
-				console.log(json);
 				const videoUrl =
 					json[0]["data"]["children"][0]["data"]["secure_media"][
 						"reddit_video"
